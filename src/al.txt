@@ -1,0 +1,47 @@
+ArrayList (  ) 
+ArrayList ( int initialCapacity ) 
+ArrayList ( Collection ) 
+
+int size (  ) 
+boolean isEmpty (  ) 
+boolean add ( Object ) 
+void add ( int  position , Object ) 
+Object set ( int  position , Object  ) 
+booean contains ( Object ) 
+int indexOf ( Object ) 
+int lastIndexOf ( Object ) 
+Object clone (  ) 
+Object[] toArray (  ) 
+Object  get ( int  position ) 
+Object   remove ( int position ) 
+boolean remove ( Object ) 
+void removeRange ( int  start , int  end ) 
+void clear (  ) 
+boolean addAll ( Collection ) 
+boolean addAll ( int position , Collection ) 
+boolean removeAll ( Collection ) 
+boolean retainAll ( Collection ) 
+ListIterator   listIterator (  ) 
+Iterator  iterator (  ) 
+
+Example
+-----------------
+import java.lang.*;
+import java.util.*;
+class C002
+{
+	public static void main(String []args)
+	{
+		ArrayList al=new ArrayList();
+		al.add(new Integer(25));
+		al.add(new Integer(12));
+		al.add(new Integer(46));
+		al.add(new Integer(23));
+		al.add(new Integer(22));
+		Iterator i=al.iterator();
+		while(i.hasNext())
+		{
+			System.out.print("\n\t"+i.next());
+		}
+	}
+}
